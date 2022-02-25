@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
     spec.name         = 'web3swift'
     spec.version      = '2.5.0'
-    spec.ios.deployment_target = "9.0"
+    spec.ios.deployment_target = "12.0"
     spec.osx.deployment_target = "10.12"
     spec.license      = { :type => 'Apache License 2.0', :file => 'LICENSE.md' }
     spec.summary      = 'Web3 implementation in vanilla Swift for iOS, macOS, and Linux'
@@ -13,6 +13,8 @@ Pod::Spec.new do |spec|
     spec.resource_bundle = { "Browser" => "Sources/web3swift/Browser/*.js" }
     spec.swift_version = '5.0'
     
+    spec.static_framework = true
+     
     spec.frameworks = 'CoreImage'
     spec.dependency 'BigInt'
     spec.dependency 'Starscream', '~> 4.0.4'
