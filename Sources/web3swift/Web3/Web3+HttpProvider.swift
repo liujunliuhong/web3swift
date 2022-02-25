@@ -20,7 +20,7 @@ public protocol Web3Provider {
 
 
 /// The default http provider.
-public class Web3HttpProvider: Web3Provider {
+open class Web3HttpProvider: Web3Provider {
     public var url: URL
     public var network: Networks?
     public var attachedKeystoreManager: KeystoreManager? = nil
